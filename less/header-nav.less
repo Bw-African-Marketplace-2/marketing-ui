@@ -1,0 +1,21 @@
+.header-nav {
+    .display-flex(space-between, center);
+    padding: 2% 12%;
+    border-bottom: .2rem solid @navigation-border;
+    background-color: @main-color;
+
+    @media @phone {
+        .display-flex(space-between, center, @direction:column);
+        padding: 2% 30%;
+    }
+        .nav {
+            .display-flex(@align:center);
+
+            a {
+                padding: 0 3rem;
+            }
+        }
+        .social {
+            .display-flex(@align:space-between);
+        }
+}
