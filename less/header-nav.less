@@ -11,11 +11,20 @@
         .nav {
             .display-flex(@align:center);
 
+            @media @phone {
+                .display-flex(center, center, @direction: column);
+            }
+
             a {
                 padding: 0 3rem;
+
+                @media @phone {
+                    padding: 1rem 3rem;
+                }
+
             }
         }
         .social {
-            .display-flex(@align:space-between);
+            .display-flex(center, space-between);
         }
 }
