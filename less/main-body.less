@@ -1,61 +1,59 @@
-#welcome {
+#welcome { //open welcome container
     margin: 2% 8%;
     .display-flex(center, center, no-wrap, column);
   
-    h1 {
+    h1 { // open h1
       .center();
       text-align: center;  
       width: 100%;
       padding: 2% 2% 6%;
 
-      @media @phone {
+      @media @phone { //open media
           font-size: 2.5rem;
-      }
-    }
-    img {
+      } //close media
+    } // close h1
+    img { // open img
         width: 100%;
         padding: 0 2%;
-      }
-  }
+    } // close img
+}
 
-  #info-container {
-    margin: 10%;
-    .display-flex(space-between, center);
+#info-container { // open info 
+    // margin: 10%;
+    .display-flex(center, center);
 
-    .info-box {
+    .info-box { // open div
         margin: 0 5%;
         display: flex;
         flex-direction: column;
         flex-grow: 1;
         flex-basis: 28%;
 
-        h2 {
-         text-align: center;
+        h2 { // open h2
+            text-align: center;
          
-         @media @phone {
-             font-size: 2rem;
-         }
-        }
-        p {
+            @media @phone { //open media
+                font-size: 2rem;
+            } //close media
+        } // close h2
+        p { //open p
             text-align: center;
 
-            @media @phone {
+            @media @phone { // open media
                 font-size: 1.5rem;
-            } 
-        }
+            } // close media
+        } //close p
+    } // close info
+} // close info container
 
-
-    }
-  }
-
-  .btn {
+    .btn { // open btn
     margin: 3% 10%;
     .center();
 
-    a {
+    a { //open a
         .button(@button-bg, @third-color, 1.6rem, 30%);
-    }
-    a:hover {
+    } //close a
+    a:hover { //open hover
         color: @fourth-color;
-    }
-  }
+    } //close hover
+} //close btn
