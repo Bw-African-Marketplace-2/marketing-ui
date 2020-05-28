@@ -1,0 +1,31 @@
+#about {
+    margin: 2%;
+    h1 {
+        text-align: center;
+    }
+}
+
+.container-about {
+    .center();
+
+    @media @phone {
+        flex-direction: column;
+    }
+  
+    .teamMember {
+        margin: 5%;
+        .display-flex(@align: center, @direction: column);
+        h2 {
+            padding: 2rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        // img {
+           
+        // }
+        a {
+            color: @secondary-color;
+            padding: 1rem;
+        }
+    }
+}
